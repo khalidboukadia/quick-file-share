@@ -1,0 +1,39 @@
+name: Build SharKhalid APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+
+      # no keystore.properties here, so the release APK is signed with the debug key and installs fine
+      - name: Build release APK (32-bit + 64-bit in one file)
+        run: |
+          chmod +x gradlew
+          ./gradlew :app:assembleRelease --stacktrace --console=plain
+          ls -l app/build/outputs/apk/release/
+          cp app/build/outputs/apk/release/app-universal-release.apk SharKhalid.apk
+
+      - name: Publish APK as a release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: sharkhalid-latest
+          name: SharKhalid - latest build
+          prerelease: true
+          body: Universal release build of SharKhalid (arm64-v8a, armeabi-v7a, x86_64), commit ${{ github.sha }}
+          target_commitish: ${{ github.sha }}
+          files: SharKhalid.apk

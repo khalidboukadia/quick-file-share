@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dateien teilen</string>
+    <string name="app_name">SharKhalid</string>
 
     <string name="action_share">Teilen</string>
     <string name="action_receive">Empfangen</string>

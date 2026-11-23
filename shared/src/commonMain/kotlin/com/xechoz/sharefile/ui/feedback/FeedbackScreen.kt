@@ -257,7 +257,7 @@ private fun FeedbackScreenPreview() {
             message = "The QR code is hard to scan in dark mode.",
             type = FeedbackType.Suggestion,
             email = "user@example.com",
-            appName = "Quick File Share",
+            appName = "SharKhalid",
             appVersion = "1.4.0",
             platform = "Android 14 (API 34), Pixel 7",
             snackbarHostState = remember { SnackbarHostState() },

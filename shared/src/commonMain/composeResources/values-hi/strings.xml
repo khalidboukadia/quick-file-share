@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">फ़ाइल साझा करें</string>
+    <string name="app_name">SharKhalid</string>
 
     <string name="action_share">साझा करें</string>
     <string name="action_receive">प्राप्त करें</string>

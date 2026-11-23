@@ -1,4 +1,4 @@
-# Quick File Share — Share Files Over Your Local Network (Android & Desktop)
+# SharKhalid — Share Files Over Your Local Network (Android & Desktop)
 
 **English** | [简体中文](README.zh-CN.md)
 

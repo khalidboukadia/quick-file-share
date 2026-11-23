@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Quick File Share
+Name=SharKhalid
 Comment=Share files over your local network
 Exec=sharefile %U
 Icon=sharefile

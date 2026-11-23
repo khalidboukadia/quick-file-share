@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Обмен файлами</string>
+    <string name="app_name">SharKhalid</string>
 
     <string name="action_share">Поделиться</string>
     <string name="action_receive">Принять</string>

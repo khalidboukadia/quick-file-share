@@ -17,7 +17,7 @@ data class FeedbackDraft(
 
 object FeedbackUrl {
 
-    const val REPO_URL = "https://github.com/xechoz/quick-file-share"
+    const val REPO_URL = "https://github.com/khalidboukadia/quick-file-share"
 
     private const val LABEL = "feedback"
     private const val TITLE_MAX = 60

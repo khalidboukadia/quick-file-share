@@ -16,7 +16,7 @@ class FeedbackUrlTest {
         message = message,
         type = type,
         email = email,
-        appName = "Quick File Share",
+        appName = "SharKhalid",
         appVersion = "1.4.0",
         platform = "Linux 6.10 (amd64)",
     )
@@ -47,7 +47,7 @@ class FeedbackUrlTest {
         val body = param(FeedbackUrl.issuesNew(draft()), "body")
         assertTrue(body.startsWith("Something is broken"))
         assertTrue(body.contains("**Type:** Bug"))
-        assertTrue(body.contains("**App:** Quick File Share 1.4.0"))
+        assertTrue(body.contains("**App:** SharKhalid 1.4.0"))
         assertTrue(body.contains("**Platform:** Linux 6.10 (amd64)"))
     }
 
